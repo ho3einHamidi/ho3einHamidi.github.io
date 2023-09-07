@@ -1,0 +1,84 @@
+@media screen and (max-width: 768px){
+    .main-page .header {
+        max-width: 375px;
+        left: 0%;
+        translate: 0;
+    }
+    .header .left-side .burger-menu {
+        display: flex;
+      }
+    .header .left-side .logo {
+        display: none;
+    }
+    .header .left-side .navbar {
+        display: none;
+
+    }
+    .main-page .choose-operators {
+      display: none;
+    }
+    .header .right-side{
+        color: black;
+    }
+    .champions{
+        margin-bottom: 40px;
+    }
+    .champions .font-lg{
+        font-size: 64px;
+    }
+    .champions .champions-header .description{
+        max-width: 240px;
+    }
+    .champions .champions-header .buttons-wrapper{
+        width: 100%;
+        max-width: 350px;
+    }
+    .main-page .news {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0;
+    }
+    .main-page .news .top-news {
+        display: none;
+    }
+    .main-page .news .secondry-news {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    .main-page .input-wrapper {
+        grid-template-columns: 1fr;
+    }
+    .main-page .input-wrapper .input-img{
+        display: none;
+    }
+    .main-page .dash-border{
+        width: 100%;
+        max-width: 350px;
+        display: none;
+    }
+    .main-page .input-wrapper .id-input {
+        background-color: rgba(240, 355, 254, 0);
+    }
+    .main-page footer .legal-links {
+        max-width: 350px;
+        font-size: 6px;
+    }
+    .main-page footer .studio-links{
+        grid-gap: 0;
+        grid-template-columns: repeat(2, 2fr);
+        grid-template-rows: repeat(2, 44px);
+        grid-template-areas: 
+        "link-1 link-2"
+        "link-6 link-4";
+        max-width: 350px;
+        max-height: 240px;
+        column-gap: 8px;
+        row-gap: 32px;
+    }
+    .main-page footer .studio-links #display{
+        display: none;
+    }
+    .main-page footer .rating-section p{
+        width: 100%;
+        max-width: 350px;
+    }
+    }

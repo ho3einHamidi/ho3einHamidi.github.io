@@ -48,6 +48,11 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+
+/* this is for responsive */
+.header .left-side .burger-menu {
+  display: none;
+}
 .header .right-side {
   display: flex;
   flex-direction: row;
@@ -516,7 +521,7 @@ body {
   margin: 32px auto 0 auto;
   display: flex;
   justify-content: center;
-  background-color: #2154;
+  /* background-color: #2154; */
   /* border-radius: 32px; */
   /* border: 1px solid aquamarine; */
   display: grid;
@@ -612,50 +617,64 @@ body {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(2, 44px);
-  grid-template-areas: 
-  "link-1 link-2 link-3 link-4 link-5 link-6"
-  "link-7 link-8 link-9 link-10 link-11 link-12";
+  grid-template-areas:
+    "link-1 link-2 link-3 link-4 link-5 link-6"
+    "link-7 link-8 link-9 link-10 link-11 link-12";
   height: 100%;
   max-height: 255px;
   width: 100%;
-  max-width: 1320px;
-  align-content: space-around;
+  max-width: 1080px;
+  align-content: center;
   justify-content: center;
   margin: 0 auto;
+  grid-gap: 60px 24px;
 }
-.main-page footer .studio-links img{
+
+.main-page footer .studio-links img {
   width: 100%;
   height: 100%;
+  object-fit: contain;
 }
-.main-page footer .studio-links .link-1{
+.main-page footer .studio-links img:hover {
+  cursor: pointer;
+}
+.main-page footer .studio-links .link-1 {
   grid-area: link-1;
 }
-.main-page footer .studio-links .link-2{
+.main-page footer .studio-links .link-2 {
   grid-area: link-2;
-}.main-page footer .studio-links .link-3{
+}
+.main-page footer .studio-links .link-3 {
   grid-area: link-3;
-}.main-page footer .studio-links .link-4{
+}
+.main-page footer .studio-links .link-4 {
   grid-area: link-4;
-}.main-page footer .studio-links .link-5{
+}
+.main-page footer .studio-links .link-5 {
   grid-area: link-5;
-}.main-page footer .studio-links .link-6{
+}
+.main-page footer .studio-links .link-6 {
   grid-area: link-6;
-}.main-page footer .studio-links .link-7{
+}
+.main-page footer .studio-links .link-7 {
   grid-area: link-7;
-}.main-page footer .studio-links .link-8{
+}
+.main-page footer .studio-links .link-8 {
   grid-area: link-8;
-}.main-page footer .studio-links .link-9{
+}
+.main-page footer .studio-links .link-9 {
   grid-area: link-9;
-}.main-page footer .studio-links .link-10{
+}
+.main-page footer .studio-links .link-10 {
   grid-area: link-10;
-}.main-page footer .studio-links .link-11{
+}
+.main-page footer .studio-links .link-11 {
   grid-area: link-11;
 }
-.main-page footer .studio-links .link-12{
+.main-page footer .studio-links .link-12 {
   grid-area: link-12;
-
 }
-.main-page footer .rating-section{
+.main-page footer .rating-section {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -664,24 +683,26 @@ body {
   margin-top: 44px;
   gap: 36px;
 }
-.main-page footer .rating-section p{
+.main-page footer .rating-section p {
   width: 870px;
   color: white;
 
   text-align: center;
 }
-.main-page footer .rating-section img{
+.main-page footer .rating-section img {
   width: 64px;
   height: 64px;
 }
-.main-page footer .rating-section .cookie{
+.main-page footer .rating-section .cookie {
   width: 190px;
   height: 50px;
-background-color: transparent
-;
-color: #ffff;
-border: white 1px solid;
-border-radius: 8px;
-font-size: 14px;
-font-weight: 600;
+  background-color: transparent;
+  color: #ffff;
+  border: white 1px solid;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.main-page footer .rating-section .cookie:hover {
+  cursor: pointer;
 }
