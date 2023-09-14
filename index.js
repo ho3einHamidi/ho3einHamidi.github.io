@@ -1,5 +1,10 @@
-const navbar = addEventListener("click",addText)
+const navbar = document.querySelector(".header");
+const landing = document.querySelector(".landing");
 
-function addText(){
-   navbar.innerText = "GAME -" 
-}
+window.addEventListener("scroll", () => {
+  if (Math.floor(window.scrollY) + 97 < landing.scrollHeight) {
+    navbar.classList.remove("scrollup");
+  } else {
+    navbar.classList.add("scrollup");
+  }
+});
