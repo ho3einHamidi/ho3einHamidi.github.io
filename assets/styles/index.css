@@ -534,7 +534,10 @@ body {
   justify-content: center;
   align-items: center;
   gap: 24px;
-  background-color: #fff;
+  background-image: url(./image/input-background.jfif);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100%;
 }
 .main-page .input-wrapper .id-input .lable {
@@ -546,22 +549,29 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 24px;
+  border-radius: 8px;
 }
 .main-page .input-wrapper .id-input .input {
   border: 1px solid black;
   width: 100%;
-  max-width: 237px;
+  max-width: 300px;
   height: 40px;
-  border-radius: 16px;
+  border-radius: 6px;
   padding: 8px 16px;
   font-size: 14px;
-  /* background-color: #202d37; */
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  outline: none;
+  border: none;
 }
 .main-page .input-wrapper .id-input .button {
-  width: 72px;
-  height: 32px;
-  border-radius: 8px;
+  width: 300px;
+  height: 48px;
+ border: none;
+ border-radius: 6px;
+ background: linear-gradient(45deg, #242b48, #263254);
+ font-weight: 700;
+ color: #2499ff;
 }
 .main-page .input-wrapper .id-input .button:hover {
   cursor: pointer;
@@ -575,14 +585,14 @@ body {
   max-height: 498px;
 }
 .main-page footer {
-  margin-top: 15px;
   width: 100%;
   /* height: 100%;
   max-height: 580px; */
   /* max-width: 1440px; */
   padding-top: 64px;
-  background-color: rgb(20, 69, 126);
-  margin: 0 auto;
+  background-color: rgba(20, 69, 126,0.5);
+  margin: 15px auto 0 auto;
+  padding-bottom: 64px;
 }
 .main-page footer .legal-links {
   width: 100%;

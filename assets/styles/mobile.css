@@ -1,6 +1,5 @@
 @media screen and (max-width: 768px){
     .main-page .header {
-        max-width: 375px;
         left: 0%;
         translate: 0;
     }
@@ -15,7 +14,15 @@
 
     }
     .main-page .choose-operators {
-      display: none;
+      display: flex;
+      flex-direction: column;
+    }
+    .main-page .choose-operators h2 {
+        display: none;
+    }
+    .main-page .choose-operators .operators-dsc{
+        overflow: scroll;
+        gap: 16px;
     }
     .header .right-side{
         color: black;
@@ -32,6 +39,10 @@
     .champions .champions-header .buttons-wrapper{
         width: 100%;
         max-width: 350px;
+    }
+    .main-page .landing{
+        max-height: 414px;
+        height: 100%;
     }
     .main-page .news {
         grid-template-columns: repeat(1, 1fr);
@@ -57,6 +68,7 @@
     }
     .main-page .input-wrapper .id-input {
         background-color: rgba(240, 355, 254, 0);
+        background-image: none;
     }
     .main-page footer .legal-links {
         max-width: 350px;
