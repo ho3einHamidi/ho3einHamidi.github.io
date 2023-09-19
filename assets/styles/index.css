@@ -227,6 +227,7 @@ body {
   /* background-size: cover; */
   background-position: center;
   background-size: 100%;
+  background-repeat: no-repeat;
 }
 @keyframes animateBg {
   from {
@@ -535,14 +536,20 @@ body {
 .main-page .input-wrapper .id-input {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
-  gap: 24px;
-  background-image: url(../image/input-background.jfif);
+  gap: 9px;
+  /* background-image: url(../image/r6-blackIce.png); */
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
+}
+
+.main-page .input-wrapper .id-input img{
+  width: 300px;
+  height: 150px;
+  margin: 36px 0;
 }
 .main-page .input-wrapper .id-input .lable {
   background-color: #4979d8;
@@ -555,18 +562,41 @@ body {
   align-items: center;
   border-radius: 8px;
 }
+.main-page .input-wrapper .id-input .label-inputs{
+  color: white;
+  width: 100%;
+  max-width: 300px;
+  /* font-weight: 600; */
+}
+.main-page .input-wrapper .id-input .label-inputs:focus{
+  border: 1px solid white;
+}
 .main-page .input-wrapper .id-input .input {
-  border: 1px solid black;
   width: 100%;
   max-width: 300px;
   height: 40px;
-  border-radius: 6px;
+  /* border-radius: 6px; */
   padding: 8px 16px;
   font-size: 14px;
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
+  background-color: #1b1b1b !important;
+  border: 1px solid #3b3b3b;
+  color: #ffff;
   outline: none;
-  border: none;
+}
+.main-page .input-wrapper .id-input .input:focus {
+  border: 1px solid white;
+}
+.main-page .input-wrapper .id-input .recovery-section {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  margin: 8px 0;
+}
+.main-page .input-wrapper .id-input .recovery-section a{
+  color: white;
 }
 .main-page .input-wrapper .id-input .button {
   width: 300px;
@@ -579,6 +609,9 @@ body {
 }
 .main-page .input-wrapper .id-input .button:hover {
   cursor: pointer;
+  border: 1px solid white;
+  transition: all 0.5s;
+
 }
 .main-page .input-wrapper .input-img {
   width: 100%;
