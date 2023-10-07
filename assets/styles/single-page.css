@@ -1,0 +1,85 @@
+@font-face {
+    font-family: ubisoftsans;
+    src: url(../fonts/ubisoftsans-regular.woff2);
+  }
+  body {
+    font-family: ubisoftsans, sans-serif;
+  }
+
+
+
+.main-page{
+    background: url(/assets/image/background.jpg);
+    width: 100%;
+    height: 100%;
+}
+.main-page .header {
+    width: 100%;
+    max-width: 1440px;
+    height: 65px;
+    position: fixed;
+    top: 0;
+    background-color: rgba(196, 205, 213, 0.3);
+    backdrop-filter: blur(22px);
+    margin: 32px auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    color: #fff;
+    left: 50%;
+    translate: -50%;
+    z-index: 1;
+    transition: all 0.5s;
+  }
+  .main-page .header.scrollup {
+    transform: translate(0, -100px);
+  }
+  .header .left-side {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* this is for responsive */
+  .header .left-side .burger-menu {
+    display: none;
+  }
+  .header .right-side {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 16px;
+  }
+  .header .navbar {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+  }
+  .header .logo img {
+    width: 143px;
+    height: 30px;
+  }
+  .main-page .top-color{
+    background-image: url(/assets/image/top-color-img.jpg);
+    opacity: 0.5;
+    width: 100%;
+  height: 50vw;
+  max-height: 277px;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 100px), 0 100%);
+}
+.main-page .season-landing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-page .season-landing img{
+    width: 850px;
+    height: 470px;
+}
+  
