@@ -11,24 +11,21 @@ window.addEventListener("scroll", () => {
 });
 
 const getPosts = async () => {
-  const response = await fetch("https://jsonplaceholder.typicode.com/posts");
+  const response = await fetch("./index.json");
   const posts = await response.json();
-  return posts.slice(0, 3);
+  console.log(posts)
+
+  return posts.data;
 };
-const postImages = [
-  "./assets/image/rainbow-1.jpg",
-  "./assets/image/rainbow-2.jpg",
-  "./assets/image/rainbow-3.jpg",
-  "d",
-];
-const createPost = (post, image) => {
+
+const createPost = (post) => {
   console.log(post);
   const sideNewsWrapper = document.querySelector(".side-news-wrapper");
   const news = document.createElement("div");
   news.classList.add("side-news");
   news.setAttribute("id", post.id);
   const newsImage = document.createElement("img");
-  newsImage.setAttribute("src", image);
+  newsImage.setAttribute("src", post.image);
   const newsDescriptionSection = document.createElement("div");
   newsDescriptionSection.classList.add("caption");
   const newsTitle = document.createElement("p");
@@ -47,8 +44,8 @@ const createPost = (post, image) => {
 };
 window.addEventListener("load", () => {
   getPosts().then((data) => {
-    data.map((post, index) => {
-      return createPost(post, postImages[index]);
+    data.map((post) => {
+      return createPost(post);
     });
   });
 });

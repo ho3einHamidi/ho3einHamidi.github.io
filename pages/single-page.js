@@ -7,10 +7,20 @@ console.log(id);
 
 const getPost =  () => {
     fetch(
-    `https://jsonplaceholder.typicode.com/posts/${id}`
+    `../index.json`
   ).then(response =>{
-     return response.json()
-  }).then(data =>createPost(data))
+     return response.json();
+     
+  }).then(posts =>{
+    console.log(posts);
+    const post = posts.data.find((item) =>{
+        console.log(item.id)
+        return item.id == id
+     }) 
+     console.log(post);
+     createPost(post) 
+
+  })
 }
 
 

@@ -1,0 +1,25 @@
+{
+    "data" :[
+        {
+            "title" : "RAINBOW SIX SIEGE Beta: What You Need to Know",
+            "body" :"Ready to play the SIX SIEGE Beta? Here’s the full rundown, including Beta timing and download intel, tips on maps and game modes, in-game progression, and the rewards you can earn for use in RAINBOW SIX SIEGE.",
+            "image" : "./assets/image/rainbow-1.jpg",
+            "date" : "2023-02-26T07:26:36.611Z",
+            "id" : 1
+        },
+        {
+            "title" : "RAINBOW SIS SIEGE: NEXT REVEALS URZIKSTAN, THE NEW BIG MAP COMING TO RAINBOWSIX SIEGE: WARZONE",
+            "body" :"Get ready to deploy to Urzikstan, the upcoming map for RAINBOWSIX SIEGE: Warzone announced at RAINBOW SIX SIEGE: Next and a major region in the RAINBOWSIX SIEGE: Modern Warfare narrative. Launching in December as part of Season 01, this metropolis on the eastern border of the Black Sea includes 11 distinct and memorable points of interest. Preview them now in this overview of the region.",
+            "image" : "./assets/image/rainbow-2.jpg",
+            "date" : "2022-12-26T07:16:56.611Z",
+            "id" : 2  
+        },
+        {
+            "title" : "RAINBOW SIX SIEGE: NEXT: EVERY MAJOR ANNOUNCEMENT AND RAINBOW SIX SIEGE ENDOWMENT (C.O.D.E.) BOWL IV",
+            "body" :"With the November 10 release of RAINBOWSIX SIEGE: Modern Warfare III just around the corner, Sledgehammer Games takes to the stage at RAINBOWSIX SIEGE: Next to discuss Multiplayer in depth, alongside representatives from Treyarch showing off Zombies, Raven Software presenting RAINBOWSIX SIEGE: Warzone, and more. Plus, the RAINBOWSIX SIEGE Endowment (C.O.D.E.) Bowl IV champions will be revealed!",
+            "image" : "./assets/image/rainbow-3.jpg",
+            "date" : "2022-10-26T12:13:36.611Z",
+            "id" : 3   
+        }
+    ]
+}
