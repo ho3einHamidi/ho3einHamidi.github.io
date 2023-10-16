@@ -3,15 +3,13 @@ const searchParams = new URLSearchParams(url.search);
 const id = searchParams.get("id");
 const mainPage = document.querySelector(".main-page");
 const headLineDsc = document.querySelector(".headline-dsc")
+const graphic = document.querySelector(".graphic")
 console.log(id);
 
 const getPost =  () => {
     fetch(
     `../index.json`
-  ).then(response =>{
-     return response.json();
-     
-  }).then(posts =>{
+  ).then(response =>response.json()).then(posts =>{
     console.log(posts);
     const post = posts.data.find((item) =>{
         console.log(item.id)
@@ -25,7 +23,7 @@ const getPost =  () => {
 
 
 const createPost = (post) => {
-//   console.log(post);
+  console.log(post.image);
 //   const news = document.createElement("div");
 //   const newsTitle = document.createElement("p");
 //   newsTitle.innerHTML = post.title;
@@ -37,6 +35,10 @@ const createPost = (post) => {
     const dsc = document.createElement("p")
     dsc.innerHTML = post.body
     headLineDsc.appendChild(dsc)
+    const image = document.createElement("img")
+    const postImage = `/assets/image/${post.image}`
+    image.setAttribute("src",postImage)
+    graphic.appendChild(image)
 };
 window.addEventListener("load", () => {
     getPost()

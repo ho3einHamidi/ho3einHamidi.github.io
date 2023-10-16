@@ -92,10 +92,10 @@ body {
   max-width: 850px;
   display: flex;
   flex-direction: row;
-
+  justify-content: space-between;
 }
 .main-page .blog-header-container .texts .headline{
-    max-width: 670px ;
+    max-width: 635px ;
     color: white;
     display: flex;
     flex-direction: column;
@@ -125,7 +125,7 @@ body {
 }
 
 .main-page .blog-header-container .texts .release-time{
-    min-width: 180px;
+    max-width: 180px;
     color: white;
     display: flex;
     flex-direction: column;
@@ -140,4 +140,5 @@ body {
 }
 .main-page .blog-header-container .texts .release-time button{
   padding: 12px 24px;
+  font-size: 10px;
 }

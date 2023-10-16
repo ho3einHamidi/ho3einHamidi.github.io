@@ -25,18 +25,19 @@ const createPost = (post) => {
   news.classList.add("side-news");
   news.setAttribute("id", post.id);
   const newsImage = document.createElement("img");
-  newsImage.setAttribute("src", post.image);
+  const postsImage = `./assets/image/${post.image}`
+  newsImage.setAttribute("src", postsImage);
   const newsDescriptionSection = document.createElement("div");
   newsDescriptionSection.classList.add("caption");
   const newsTitle = document.createElement("p");
   newsTitle.classList.add("title");
   newsTitle.innerHTML = post.title;
   const newsDescription = document.createElement("p");
-  newsDescription.classList.add("description");
+  newsDescription.classList.add("descriptions");
   newsDescription.innerHTML = post.body;
 
-  newsDescriptionSection.appendChild(newsDescription);
   newsDescriptionSection.appendChild(newsTitle);
+  newsDescriptionSection.appendChild(newsDescription);
   news.appendChild(newsImage);
 
   news.appendChild(newsDescriptionSection);
@@ -51,8 +52,8 @@ window.addEventListener("load", () => {
 });
 sideNewsWrapper.addEventListener("click", (event) => {
   if (
-    event.target.className === "description" ||
-    event.target.tagName === "IMG"
+    event.target.className === "descriptions" ||
+    event.target.tagName === "IMG" || event.target.className === "title"
   ) {
     const parent = event.target.closest(".side-news");
     const id = parent.id;
