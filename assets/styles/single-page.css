@@ -142,3 +142,6 @@ body {
   padding: 12px 24px;
   font-size: 10px;
 }
+.main-page .blog-header-container .texts .release-time button:hover{
+  cursor: pointer;
+}

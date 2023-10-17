@@ -594,7 +594,7 @@ body {
   font-size: 11px;
   color: #92918a;
 }
-.main-page .news .secondry-news .side-news-wrapper{
+.main-page .news .secondry-news .side-news-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -605,7 +605,6 @@ body {
   display: flex;
   flex-direction: row;
   gap: 16px;
-
 }
 .main-page .news .secondry-news .side-news:hover {
   cursor: pointer;
@@ -615,7 +614,7 @@ body {
   flex-direction: column;
   gap: 7px;
 }
-.main-page .news .secondry-news .side-news .caption .descriptions{
+.main-page .news .secondry-news .side-news .caption .descriptions {
   max-height: 34px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -646,22 +645,60 @@ body {
   background-color: white;
   margin: 24px auto;
 }
-.main-page .subscribe{
+.main-page .subscribe {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 16px;
   width: 100%;
+  max-width: 620px;
   height: 350px;
-  background-color: red;
-  max-width: 1450px;
   margin: 0 auto;
+  background-image:
+  linear-gradient(0deg, rgb(33 44 76), rgb(0 0 0 / 50%)), url(/assets/image/inputs-background-1.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 25px;
+  color: white;
+  padding-top: 32px;
 }
-.main-page .subscribe .subscribe-inputs{
+.main-page .subscribe .subscribe-headlable {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.main-page .subscribe .subscribe-headlable h3{
+  font-size: 28px;
+}
+.main-page .subscribe .subscribe-headlable p{
+  font-size: 18px;
+}
+.main-page .subscribe .subscribe-inputs {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  margin-top: 20px;
+  gap: 3px;
 }
-
-
+.main-page .subscribe .subscribe-inputs input{
+  width: 244px;
+  height: 42px;
+  padding-left: 16px;
+  border-radius: 24px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+}
+.main-page .subscribe .subscribe-inputs button{
+  height: 42px;
+  width: 100px;
+  border-radius: 24px;
+  border: none;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.8);
+}
 .main-page #user-input {
   margin-bottom: 24px;
 }

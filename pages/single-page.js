@@ -23,7 +23,7 @@ const getPost =  () => {
 
 
 const createPost = (post) => {
-  console.log(post.image);
+  // console.log(post.image);
 //   const news = document.createElement("div");
 //   const newsTitle = document.createElement("p");
 //   newsTitle.innerHTML = post.title;
