@@ -223,3 +223,33 @@ body {
   border: none;
   background-color: #2599ff;
 }
+.main-page .comments .right-area button:hover{
+  cursor: pointer;
+}
+.main-page .users-comment{
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.main-page .users-comment .all-comments{
+  
+  background-color: #0c2f4f81;
+  border: 1px solid #2369b0;
+  position: relative;
+  top: -30px;
+  color: white;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.main-page .users-comment .comment{
+  background-color: #062037;
+  padding: 8px;
+}
+.main-page .users-comment .user-text{
+  padding-left: 8px;
+}
