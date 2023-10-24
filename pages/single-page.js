@@ -4,6 +4,8 @@ const id = searchParams.get("id");
 const mainPage = document.querySelector(".main-page");
 const headLineDsc = document.querySelector(".headline-dsc")
 const graphic = document.querySelector(".graphic")
+const header = document.querySelector(".header")
+const headerHeight = header.scrollHeight;
 console.log(id);
 
 const getPost =  () => {
@@ -42,4 +44,5 @@ const createPost = (post) => {
 };
 window.addEventListener("load", () => {
     getPost()
+
 });

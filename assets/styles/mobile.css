@@ -15,6 +15,7 @@
   .main-page .choose-operators {
     display: flex;
     flex-direction: column;
+    margin-top: 0;
   }
   .main-page .choose-operators h2 {
     display: none;
