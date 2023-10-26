@@ -6,8 +6,20 @@ const headLineDsc = document.querySelector(".headline-dsc")
 const graphic = document.querySelector(".graphic")
 const header = document.querySelector(".header")
 const headerHeight = header.scrollHeight;
+const blogHeader= document.querySelector(".blog-header-container")
+const blogHeaderHeight = blogHeader.scrollHeight;
 const userComment = document.querySelector(".users-comment")
-console.log(id);
+console.log(blogHeaderHeight);
+
+window.addEventListener("scroll", ()=>{
+  console.log(window.scrollY)
+  if(Math.floor(window.scrollY) + 125 < blogHeaderHeight){
+    header.classList.remove("scrollup")
+  }else{
+    header.classList.add("scrollup")
+  }
+})
+
 
 const getPost =  () => {
     fetch(

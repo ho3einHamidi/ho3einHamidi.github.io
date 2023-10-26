@@ -62,4 +62,27 @@
         max-width: 200px;
         margin: 0 auto;
       }
+      .main-page .comments{
+        max-width: 339px;
+        top: 0;
+        display: flex;
+      }
+      .main-page .comments .right-area{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+      }
+      .main-page .comments .left-area{
+        display: none;
+      }
+      .main-page .users-comment{
+        max-width: 339px;
+        margin: 16px auto 0 auto;
+      }
+      .main-page .users-comment .all-comments{
+        top: 0;
+      }
 }

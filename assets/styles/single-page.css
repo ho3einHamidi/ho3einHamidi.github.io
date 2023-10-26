@@ -222,6 +222,7 @@ body {
   /* border-radius: 25px; */
   border: none;
   background-color: #2599ff;
+  border-radius: 10px;
 }
 .main-page .comments .right-area button:hover{
   cursor: pointer;
