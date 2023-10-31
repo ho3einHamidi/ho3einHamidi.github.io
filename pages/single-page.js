@@ -9,17 +9,24 @@ const headerHeight = header.scrollHeight;
 const blogHeader= document.querySelector(".blog-header-container")
 const blogHeaderHeight = blogHeader.scrollHeight;
 const userComment = document.querySelector(".users-comment")
-console.log(blogHeaderHeight);
+const sendMessage = document.querySelector(".send-message")
+const comment = document.querySelector("#comment")
+const userName = document.querySelector("#name")
+const userEmail = document.querySelector("#email")
 
 window.addEventListener("scroll", ()=>{
-  console.log(window.scrollY)
-  if(Math.floor(window.scrollY) + 125 < blogHeaderHeight){
+  if(Math.floor(window.scrollY) + 105 < blogHeaderHeight){
     header.classList.remove("scrollup")
   }else{
     header.classList.add("scrollup")
   }
 })
+sendMessage.addEventListener("click", (event) => {
+  event.preventDefault()
+  sendMessage.disabled = true
 
+  postComments()
+})
 
 const getPost =  () => {
     fetch(
@@ -47,7 +54,7 @@ const createPost = (post) => {
 //   news.appendChild(newsTitle);
 //   mainPage.appendChild(news);
     const dsc = document.createElement("p")
-    dsc.innerHTML = post.body
+    dsc.innerText = post.body
     headLineDsc.appendChild(dsc)
     const image = document.createElement("img")
     const postImage = `/assets/image/${post.image}`
@@ -72,7 +79,7 @@ const createComment = (comment) =>{
   const name = document.createElement("div")
   name.classList.add("name");
   const head = document.createElement("h3")
-  head.innerHTML = comment.name;
+  head.innerText = comment.name;
   name.appendChild(head)
   allComments.appendChild(name);
   const userText = document.createElement("div")
@@ -82,6 +89,18 @@ const createComment = (comment) =>{
   userText.appendChild(paragraph)
   allComments.append(userText)
   userComment.appendChild(allComments)
+}
+
+const postComments = () =>{
+
+  setTimeout(() => {
+  sendMessage.disabled = false
+    createComment({name : userName.value,
+    body: comment.value})
+    userName.value = "";
+    userEmail.value = "";
+    comment.value = "";
+  }, 1000);
 }
 
 

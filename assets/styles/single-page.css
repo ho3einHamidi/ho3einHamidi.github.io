@@ -213,7 +213,7 @@ body {
   background-color: #062037;
   border: 1px solid #2369b0;
   color:  white;
-
+  resize: none;
 }
 .main-page .comments .right-area button{
   width: 100%;
