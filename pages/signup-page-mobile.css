@@ -1,0 +1,16 @@
+@media screen and (max-width: 768px){
+    .main-page{
+
+    }
+    .main-page .login-wrapper{
+        max-height: none;
+    }
+    .main-page .login-wrapper .logo img{
+        
+    }
+    .main-page .login-wrapper .r6-logo img{
+
+        width: 100px;
+        display: flex;
+      }
+}

@@ -1,7 +1,8 @@
 const navbar = document.querySelector(".header");
 const landing = document.querySelector(".landing");
 const sideNewsWrapper = document.querySelector(".side-news-wrapper");
-
+const login = document.querySelector(".login");
+const signup = document.querySelector(".sign-up")
 window.addEventListener("scroll", () => {
   if (Math.floor(window.scrollY) + 97 < landing.scrollHeight) {
     navbar.classList.remove("scrollup");
@@ -67,3 +68,13 @@ sideNewsWrapper.addEventListener("click", (event) => {
 document
   .getElementById("scroll")
   .addEventListener("click", console.log("done!"));
+
+
+
+  login.addEventListener("click", () =>{
+    window.location.href = `/pages/login-page.html`
+  })
+
+  signup.addEventListener("click", () =>{
+    window.location.href = `/pages/signup-page.html`
+  })
