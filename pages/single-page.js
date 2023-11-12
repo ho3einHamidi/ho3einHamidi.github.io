@@ -13,7 +13,8 @@ const sendMessage = document.querySelector(".send-message")
 const comment = document.querySelector("#comment")
 const userName = document.querySelector("#name")
 const userEmail = document.querySelector("#email")
-
+const login = document.querySelector(".login");
+const signup = document.querySelector(".sign-up")
 window.addEventListener("scroll", ()=>{
   if(Math.floor(window.scrollY) + 105 < blogHeaderHeight){
     header.classList.remove("scrollup")
@@ -108,3 +109,11 @@ window.addEventListener("load", () => {
     getPost()
     getComment()
 });
+
+login.addEventListener("click", () =>{
+  window.location.href = `/pages/login-page.html`
+})
+
+signup.addEventListener("click", () =>{
+  window.location.href = `/pages/signup-page.html`
+})

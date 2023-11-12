@@ -65,6 +65,9 @@ body {
   align-items: center;
   gap: 16px;
 }
+.header .right-side.--hide {
+  display: none;
+}
 .header .right-side .login:hover{
   cursor: pointer;
 

@@ -55,6 +55,12 @@ body {
   align-items: center;
   gap: 16px;
 }
+.header .right-side .login:hover{
+cursor: pointer;
+}
+.header .right-side .sign-up:hover{
+  cursor: pointer;
+  }
 .header .navbar {
   display: flex;
   flex-direction: row;

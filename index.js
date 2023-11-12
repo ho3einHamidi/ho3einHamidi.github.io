@@ -3,6 +3,7 @@ const landing = document.querySelector(".landing");
 const sideNewsWrapper = document.querySelector(".side-news-wrapper");
 const login = document.querySelector(".login");
 const signup = document.querySelector(".sign-up")
+const loginSignupWrapper = document.querySelector(".right-side")
 window.addEventListener("scroll", () => {
   if (Math.floor(window.scrollY) + 97 < landing.scrollHeight) {
     navbar.classList.remove("scrollup");
@@ -14,13 +15,11 @@ window.addEventListener("scroll", () => {
 const getPosts = async () => {
   const response = await fetch("./index.json");
   const posts = await response.json();
-  console.log(posts)
 
   return posts.data;
 };
 
 const createPost = (post) => {
-  console.log(post);
   const sideNewsWrapper = document.querySelector(".side-news-wrapper");
   const news = document.createElement("div");
   news.classList.add("side-news");
@@ -44,7 +43,16 @@ const createPost = (post) => {
   news.appendChild(newsDescriptionSection);
   sideNewsWrapper.appendChild(news);
 };
+const checkAuthenticator = () =>{
+  const token = localStorage.getItem("token")
+  if(!token){
+    loginSignupWrapper.classList.remove("--hide")
+  }
+}
+
+
 window.addEventListener("load", () => {
+  checkAuthenticator()
   getPosts().then((data) => {
     data.map((post) => {
       return createPost(post);
@@ -67,7 +75,7 @@ sideNewsWrapper.addEventListener("click", (event) => {
 });
 document
   .getElementById("scroll")
-  .addEventListener("click", console.log("done!"));
+  // .addEventListener("click", console.log("done!"));
 
 
 
