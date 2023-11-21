@@ -43,7 +43,7 @@ const createPost = (post) => {
   news.appendChild(newsDescriptionSection);
   sideNewsWrapper.appendChild(news);
 };
-const checkAuthenticator = () =>{
+const checkAuthentication = () =>{
   const token = localStorage.getItem("token")
   if(!token){
     loginSignupWrapper.classList.remove("--hide")
@@ -52,7 +52,7 @@ const checkAuthenticator = () =>{
 
 
 window.addEventListener("load", () => {
-  checkAuthenticator()
+  checkAuthentication()
   getPosts().then((data) => {
     data.map((post) => {
       return createPost(post);

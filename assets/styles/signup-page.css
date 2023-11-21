@@ -47,6 +47,13 @@
     width: 100px;
     display: none;
   }
+  .main-page .login-wrapper .error{
+    color: #B00020;
+  }
+  .main-page .login-wrapper .error.--hide{
+    color: #B00020;
+    display: none;
+  }
   .main-page .login-wrapper .login-form {
     width: 100%;
     display: flex;

@@ -64,8 +64,16 @@
     gap: 8px;
     color: #202D37;
   }
-  .main-page .login-wrapper .login-form .inputs p{
-    color: red;
+  .main-page .login-wrapper .login-form .inputs .error-1{
+    color: #B00020;
+  }
+  .main-page .login-wrapper .login-form .inputs .error-2{
+    color: #B00020;
+  }
+  .main-page .login-wrapper .login-form .inputs .error-1.--hide{
+    display: none;
+  }
+  .main-page .login-wrapper .login-form .inputs .error-2.--hide{
     display: none;
   }
   .main-page .login-wrapper .login-form .inputs input{
